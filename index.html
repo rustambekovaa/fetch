@@ -18,7 +18,7 @@
 
         const request = (url) => new Promise((res, rej) => {
             console.log('Start requesting...')
-            sleep(3000).then(() => {
+            sleep(3000).then((sec) => {
                 console.log(`Data is received from ${url}`)
                 console.log('Data is converting')
                 return sleep(2000)
